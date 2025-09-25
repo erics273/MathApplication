@@ -89,7 +89,7 @@ public class MathApp {
         */
 
         //just printing a visual header
-        System.out.println("-- distance between the points (5, 10) and (85, 50)--");
+        System.out.println("-- #5 distance between the points (5, 10) and (85, 50)--");
 
         //variables for coordinates and distance
         int x1 = 5;
@@ -104,8 +104,56 @@ public class MathApp {
         //print a blank line for separation
         System.out.println();
 
+        /*
+        Find and display the absolute (positive) value of a variable after it is set to -3.8
+        */
 
+        //just printing a visual header
+        System.out.println("-- #6 display the absolute (positive) value of a variable");
 
+        //create the variables
+        double negativeNumber = -3.8;
+
+        //display the result
+        System.out.println("The absolute (positive) value of " +negativeNumber+ " is " + Math.abs(negativeNumber));
+
+        //print a blank line for separation
+        System.out.println();
+
+        /*
+        Find and display a random number between 0 and 1
+        */
+
+        //just printing a visual header
+        System.out.println("-- #7 Random Number");
+
+        double randomNumnber = Math.random();
+
+        //display the result
+        System.out.println(randomNumnber + " is a random number between 0 and 1");
+
+        //print a blank line for separation
+        System.out.println();
+
+        /*
+        Calculate how many minutes are in 24 days, use a variable for each value you
+        calculate with. BONUS: How many milliseconds?
+        */
+
+        //just printing a visual header
+        System.out.println("-- #8 Minutes and milliseconds in 24 days");
+
+       //create variables
+        int numDays = 24;
+        int hoursInDay = 24;
+        int minutesPerHour = 60;
+
+        //calc minutes
+        double totalMinutes = numDays * hoursInDay * minutesPerHour;
+        long totalMilliseconds = (long) totalMinutes * 60 * 1000;
+
+        System.out.println("There are " +totalMinutes+" minutes in " + numDays+ " days");
+        System.out.println("There are " +totalMilliseconds+" milliseconds in " + numDays+ " days");
 
     }
 
