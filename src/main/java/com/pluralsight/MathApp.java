@@ -150,6 +150,7 @@ public class MathApp {
 
         //calc minutes
         double totalMinutes = numDays * hoursInDay * minutesPerHour;
+        //convert to long to get a human readable number (typecasting)
         long totalMilliseconds = (long) totalMinutes * 60 * 1000;
 
         System.out.println("There are " +totalMinutes+" minutes in " + numDays+ " days");
